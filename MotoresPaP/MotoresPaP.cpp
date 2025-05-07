@@ -1,6 +1,5 @@
-#include "Arduino.h"
+#include <Arduino.h>
 #include "MotorPaP.h"
-#include "ctype.h"
 int pasoNormalArray[4][4]={
                   {1,1,0,0},
                   {0,1,1,0},
@@ -114,10 +113,5 @@ void pasoMedio()
                 GPIOA->BSRR|=(1<<pines[j]+16);
             }
         }
-    }
-}
-void TipoPaso(){
-Function(char tipo){
-    tipo=tolower(tipo);
     }
 }
